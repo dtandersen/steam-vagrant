@@ -19,11 +19,11 @@ Vagrant.configure("2") do |config|
     apt-get clean
     apt-get update
     apt-get upgrade
-    apt-get install lxde
-    sudo dpkg --add-architecture i386
-    sudo add-apt-repository multiverse
-    sudo apt-get update
-    sudo apt-get dist-upgrade
-    sudo apt-get install steam
+    apt-get install lxde -y
+    dpkg --add-architecture i386
+    add-apt-repository multiverse
+    apt-get update
+    apt-get dist-upgrade
+    apt-get install steam -y
   SHELL
 end
